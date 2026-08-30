@@ -90,7 +90,7 @@ class BIAgent:
     def create_chat_session(self):
         """Create and return a new Gemini chat session with pre-configured tools."""
         return self.client.chats.create(
-            model="gemini-3.6-flash",
+            model="gemini-flash-latest",
             config=types.GenerateContentConfig(
                 tools=self.tools,
                 system_instruction=self.system_instruction,
